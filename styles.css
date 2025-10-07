@@ -48,25 +48,38 @@ a{
 }
 
 .recipe-image-container{
-    display: inline-flex;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: center;
     margin-bottom: 32px;
+    width: 100%;
 }
 
 .recipe-container{
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding: 12px;
-    width: 60%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.recipe-section{
+    flex: 1;
 }
 
 .recipe-header{
     margin: 12px 0;
 }
 
-img{
-    width: 40%;
+.img-container{
+    flex: 1;
 }
 
-
+img{
+    max-width: 100%;
+}
 
 
 
